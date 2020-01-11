@@ -545,6 +545,12 @@
 ** without modifying the main part of the file.
 */
 
+/*
+** If product targets Mac Catalyst, the system C function is unavailable
+*/
+#if !defined(TARGET_OS_MACCATALYST) || !TARGET_OS_MACCATALYST
+#define LUA_HAS_SYSTEM_FUNCTION
+#endif
 
 
 #endif
