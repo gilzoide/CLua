@@ -545,7 +545,7 @@
 ** without modifying the main part of the file.
 */
 
-
+#define LUA_NO_OS_EXECUTE
 
 #endif
 
